@@ -57,7 +57,4 @@ class Registration extends React.Component {
 
 export default Registration;
 
-/*
-setTimeOut(function() {
-	ReactDom.render(<input value={null} />, Registration);
-}, 1000);*/
+

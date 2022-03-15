@@ -12,20 +12,21 @@ import Login from "./components/login/login";
 import Registration from "./components/registration/registration";
 import { ReactNotifications } from 'react-notifications-component'
 import Googlemaps from "./components/googlemaps/googlemaps"
+import "./components/utils/i18n"
 
 class App extends React.Component {
-	
+
 	constructor(props) {
 		super(props);
-	} 
-	
+	}
+
 	componentDidMount() {
-	} 
-	
+	}
+
 	render() {
 
 		return (
-			
+
 			<Router>
 				<ReactNotifications />
 				<Navigation />
@@ -45,7 +46,9 @@ class App extends React.Component {
 }
 export default App;
 ReactDOM.render(
-	<App />,
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>,
 	document.getElementById('react')
 )
 

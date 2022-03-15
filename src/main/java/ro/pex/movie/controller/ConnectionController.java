@@ -55,6 +55,7 @@ public class ConnectionController {
 		UserDto userDto=null;
 		try {
 			userDto=userService.getUserByUserNameAndPassword(loginResponseDto.getUsername(),loginResponseDto.getPassword());
+			testEmail();
 		}
 		catch(WrongCredentialsException e){
 			
@@ -67,7 +68,6 @@ public class ConnectionController {
 		return ResponseUtils.info(HttpStatus.OK, null, userDto);
 		
 	}
-	
 	private void testEmail() throws IOException, MessagingException, UnsupportedEncodingException {
 		EmailDto mail = new EmailDto();
 		mail.setFrom("dragoiurioan@gmail.com");

@@ -46,7 +46,7 @@ public class UserController {
 		}
 		
 		
-		return ResponseUtils.info(HttpStatus.OK, "", users);
+		return ResponseUtils.info(HttpStatus.OK, i18nService.getTranslation(MessagesKeys.API_LOGIN_ERROR), users);
 	}
 	
 }

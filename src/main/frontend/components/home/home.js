@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
 import NotificationUtils from "../utils/notificationUtils.js";
-
+import FetchUtils from "../utils/fetchUtils.js"; 
 class Home extends React.Component {
 
 		constructor(props) {
@@ -18,7 +18,7 @@ class Home extends React.Component {
 	}
 
 	loadFromServer() {
-		fetch("http://localhost:8080/movie-app/api/users")
+		FetchUtils.get("http://localhost:8080/movie-app/api/users")
 			.then(res => res.json())
 			.then(
 				(data) => {
@@ -36,7 +36,7 @@ class Home extends React.Component {
 		return (
 			<div>
 				<h1 className="text-center"> List</h1>
-				<table >
+				<table>
 					<thead>
 						<tr>
 
