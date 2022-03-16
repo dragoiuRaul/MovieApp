@@ -3,6 +3,7 @@ const ReactDOM = require('react-dom');
 import { Redirect, Link } from "react-router-dom";
 import Registration from "../registration/registration";
 import './login.css';
+import { withTranslation } from 'react-i18next';
 
 class Login extends React.Component {
 
@@ -19,18 +20,19 @@ class Login extends React.Component {
 	}
 
 	render() {
+		const { t } = this.props;
 		return (
 
-			<div class="formStyle">
-				<div class="formStyle-heading">Movie Shop App</div>
+			<div className="formStyle">
+				<div className="formStyle-heading">Movie Shop App</div>
 				<form action="" method="get">
 					<label>
-						<span>username</span>
-						<input type="text" class="input-field" name="username" placeholder="Enter username" />
+						<span>{t('username')}</span>
+						<input type="text" className="input-field" name="username" placeholder={t('usernameplaceholder')} />
 					</label>
 					<label>
-						<span>password </span>
-						<input type="password" class="input-field" name="password" placeholder="Enter password" />
+						<span>{t('password')}</span>
+						<input type="password" className="input-field" name="password" placeholder={t('passwordplaceholder')}  />
 					</label>
 					<label><span> </span>
 						<input type="submit" value="Log in" />
@@ -48,9 +50,6 @@ class Login extends React.Component {
 
 }
 
-export default Login;
+export default withTranslation()(Login);
 
-/*
-setTimeOut(function() {
-	ReactDom.render(<input value={null} />, Login);
-}, 1000);*/
+

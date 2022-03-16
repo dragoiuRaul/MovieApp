@@ -2,6 +2,9 @@ import React from "react";
 import "./home.css";
 import NotificationUtils from "../utils/notificationUtils.js";
 import FetchUtils from "../utils/fetchUtils.js"; 
+
+import { withTranslation } from 'react-i18next';
+
 class Home extends React.Component {
 
 		constructor(props) {
@@ -33,6 +36,7 @@ class Home extends React.Component {
 	}
 
 	render() {
+		const { t } = this.props;
 		return (
 			<div>
 				<h1 className="text-center"> List</h1>
@@ -40,9 +44,9 @@ class Home extends React.Component {
 					<thead>
 						<tr>
 
-							<td> First Name</td>
-							<td> Last Name</td>
-							<td> Description</td>
+							<td>{t('firstname')}</td>
+							<td>{t('lastname')}</td>
+							<td>{t('description')}</td>
 						</tr>
 
 					</thead>
@@ -66,4 +70,4 @@ class Home extends React.Component {
 		)
 	}
 }
-export default Home;
+export default withTranslation()(Home);

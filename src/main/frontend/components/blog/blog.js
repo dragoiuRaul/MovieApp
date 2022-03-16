@@ -13,7 +13,7 @@ class Blog extends React.Component {
 	render() {
 		return (
 			<div className="home">
-				<div class="container">
+				<div className="container">
 					<h1 className="mt-5">This is a Post Title</h1>
 					<p>
 						Lorem Ipsum is simply dummy text of the printing and typesetting

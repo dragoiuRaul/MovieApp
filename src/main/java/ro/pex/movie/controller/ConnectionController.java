@@ -55,7 +55,6 @@ public class ConnectionController {
 		UserDto userDto=null;
 		try {
 			userDto=userService.getUserByUserNameAndPassword(loginResponseDto.getUsername(),loginResponseDto.getPassword());
-			testEmail();
 		}
 		catch(WrongCredentialsException e){
 			

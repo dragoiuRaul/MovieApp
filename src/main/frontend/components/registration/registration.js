@@ -1,6 +1,7 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 import './registration.css';
+import { withTranslation } from 'react-i18next';
 
 class Registration extends React.Component {
 
@@ -12,40 +13,40 @@ class Registration extends React.Component {
 	}
 
 	render() {
+		const { t } = this.props;
 		return (
 
-			<div class="formStyle">
-				<div class="formStyle-heading">Registration</div>
+			<div className="formStyle">
+				<div className="formStyle-heading">Registration</div>
 				<form action="" method="post">
 					<label>
-						<span>email</span>
-						<input type="text" class="input-field" name="email" placeholder="Enter email" />
+						<span>{t('email')}</span>
+						<input type="text" className="input-field" name="email" placeholder={t('emailplaceholder')} />
 					</label>
 					<label>
-						<span>username</span>
-						<input type="text" class="input-field" name="username" placeholder="Enter username" />
-					</label>
-					
-					<label>
-						<span>password </span>
-						<input type="password" class="input-field" name="password" placeholder="Enter password" />
+						<span>{t('username')}</span>
+						<input type="text" className="input-field" name="username" placeholder={t('usernameplaceholder')} />
 					</label>
 					<label>
-						<span>confirm password</span>
-						<input type="password" class="input-field" name="confirm password" placeholder="Confirm password" />
+						<span>{t('password')}</span>
+						<input type="password" className="input-field" name="password" placeholder={t('passwordplaceholder')}  />
+					</label>
+					<label>
+						<span>{t('confirmpassword')}</span>
+						<input type="password" className="input-field" name="confirm password" placeholder={t('passwordplaceholder')} />
 					</label>
 					<label>
 					<br/>
-						<span>First name</span>
-						<input type="text" class="input-field" name="email" placeholder="Enter First name" />
+						<span>{t('firstname')}</span>
+						<input type="text" className="input-field" name="email" placeholder={t('firstnameplaceholder')} />
 					</label>
 					<label>
-						<span>Last name</span>
-						<input type="text" class="input-field" name="email" placeholder="Enter Last name" />
+						<span>{t('lastname')}</span>
+						<input type="text" className="input-field" name="email" placeholder={t('lastnameplaceholder')}/>
 					</label>
 					
 					<label><span> </span>
-						<input type="submit" value="Register" />
+						<input type="submit" value={t('register')} />
 					</label>
 				</form>
 			</div>
@@ -55,6 +56,6 @@ class Registration extends React.Component {
 	}
 }
 
-export default Registration;
+export default withTranslation()(Registration);
 
 

@@ -43739,13 +43739,13 @@ var About = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "about"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "container"
+        className: "container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "row align-items-center my-5"
+        className: "row align-items-center my-5"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "col-lg-5"
+        className: "col-lg-5"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        "class": "font-weight-light"
+        className: "font-weight-light"
       }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")))));
     }
   }]);
@@ -43814,7 +43814,7 @@ var Blog = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "home"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "container"
+        className: "container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "mt-5"
       }, "This is a Post Title"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and")));
@@ -43883,13 +43883,13 @@ var Contact = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "contact"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "container"
+        className: "container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "row align-items-center my-5"
+        className: "row align-items-center my-5"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "col-lg-5"
+        className: "col-lg-5"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        "class": "font-weight-light"
+        className: "font-weight-light"
       }, "Contact"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")))));
     }
   }]);
@@ -44186,6 +44186,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.css */ "./src/main/frontend/components/home/home.css");
 /* harmony import */ var _utils_notificationUtils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/notificationUtils.js */ "./src/main/frontend/components/utils/notificationUtils.js");
 /* harmony import */ var _utils_fetchUtils_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/fetchUtils.js */ "./src/main/frontend/components/utils/fetchUtils.js");
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -44207,6 +44208,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
 
 
 
@@ -44259,9 +44261,10 @@ var Home = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      var t = this.props.t;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "text-center"
-      }, " List"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " First Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " Last Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " Description"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.users.map(function (user) {
+      }, " List"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, t('firstname')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, t('lastname')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, t('description')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.users.map(function (user) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
           key: user.id
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", user.firstName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", user.lastName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", user.email));
@@ -44272,7 +44275,7 @@ var Home = /*#__PURE__*/function (_React$Component) {
   return Home;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Home);
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_i18next__WEBPACK_IMPORTED_MODULE_4__["withTranslation"])()(Home));
 
 /***/ }),
 
@@ -44310,6 +44313,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 /* harmony import */ var _registration_registration__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../registration/registration */ "./src/main/frontend/components/registration/registration.js");
 /* harmony import */ var _login_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./login.css */ "./src/main/frontend/components/login/login.css");
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -44340,6 +44344,7 @@ var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/in
 
 
 
+
 var Login = /*#__PURE__*/function (_React$Component) {
   _inherits(Login, _React$Component);
 
@@ -44365,23 +44370,24 @@ var Login = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      var t = this.props.t;
       return /*#__PURE__*/React.createElement("div", {
-        "class": "formStyle"
+        className: "formStyle"
       }, /*#__PURE__*/React.createElement("div", {
-        "class": "formStyle-heading"
+        className: "formStyle-heading"
       }, "Movie Shop App"), /*#__PURE__*/React.createElement("form", {
         action: "",
         method: "get"
-      }, /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, "username"), /*#__PURE__*/React.createElement("input", {
+      }, /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, t('username')), /*#__PURE__*/React.createElement("input", {
         type: "text",
-        "class": "input-field",
+        className: "input-field",
         name: "username",
-        placeholder: "Enter username"
-      })), /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, "password "), /*#__PURE__*/React.createElement("input", {
+        placeholder: t('usernameplaceholder')
+      })), /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, t('password')), /*#__PURE__*/React.createElement("input", {
         type: "password",
-        "class": "input-field",
+        className: "input-field",
         name: "password",
-        placeholder: "Enter password"
+        placeholder: t('passwordplaceholder')
       })), /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, " "), /*#__PURE__*/React.createElement("input", {
         type: "submit",
         value: "Log in"
@@ -44395,11 +44401,7 @@ var Login = /*#__PURE__*/function (_React$Component) {
   return Login;
 }(React.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Login);
-/*
-setTimeOut(function() {
-	ReactDom.render(<input value={null} />, Login);
-}, 1000);*/
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_i18next__WEBPACK_IMPORTED_MODULE_3__["withTranslation"])()(Login));
 
 /***/ }),
 
@@ -44495,39 +44497,39 @@ var Navigation = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
         className: "nav-link",
         to: "/"
-      }, t('greetings'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, t('home'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "sr-only"
       }, "(current)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "nav-item"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
         className: "nav-link",
         to: "/about"
-      }, "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, t('about'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "nav-item"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
         className: "nav-link",
         to: "/contact"
-      }, "Contact")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, t('contact'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "nav-item"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
         className: "nav-link",
         to: "/blog"
-      }, "Blog")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, t('blog'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "nav-item"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
         className: "nav-link",
         to: "/login"
-      }, "Login")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, t('login'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "nav-item"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
         className: "nav-link",
         to: "/registration"
-      }, "Register")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, t('register'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "nav-item"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
         className: "nav-link",
         to: "/location"
-      }, "Location"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, t('location')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "nav navbar-nav navbar-right"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: sayHello,
@@ -44581,6 +44583,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _registration_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./registration.css */ "./src/main/frontend/components/registration/registration.css");
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -44609,6 +44612,7 @@ var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/in
 
 
 
+
 var Registration = /*#__PURE__*/function (_React$Component) {
   _inherits(Registration, _React$Component);
 
@@ -44626,46 +44630,47 @@ var Registration = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      var t = this.props.t;
       return /*#__PURE__*/React.createElement("div", {
-        "class": "formStyle"
+        className: "formStyle"
       }, /*#__PURE__*/React.createElement("div", {
-        "class": "formStyle-heading"
+        className: "formStyle-heading"
       }, "Registration"), /*#__PURE__*/React.createElement("form", {
         action: "",
         method: "post"
-      }, /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, "email"), /*#__PURE__*/React.createElement("input", {
+      }, /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, t('email')), /*#__PURE__*/React.createElement("input", {
         type: "text",
-        "class": "input-field",
+        className: "input-field",
         name: "email",
-        placeholder: "Enter email"
-      })), /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, "username"), /*#__PURE__*/React.createElement("input", {
+        placeholder: t('emailplaceholder')
+      })), /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, t('username')), /*#__PURE__*/React.createElement("input", {
         type: "text",
-        "class": "input-field",
+        className: "input-field",
         name: "username",
-        placeholder: "Enter username"
-      })), /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, "password "), /*#__PURE__*/React.createElement("input", {
+        placeholder: t('usernameplaceholder')
+      })), /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, t('password')), /*#__PURE__*/React.createElement("input", {
         type: "password",
-        "class": "input-field",
+        className: "input-field",
         name: "password",
-        placeholder: "Enter password"
-      })), /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, "confirm password"), /*#__PURE__*/React.createElement("input", {
+        placeholder: t('passwordplaceholder')
+      })), /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, t('confirmpassword')), /*#__PURE__*/React.createElement("input", {
         type: "password",
-        "class": "input-field",
+        className: "input-field",
         name: "confirm password",
-        placeholder: "Confirm password"
-      })), /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", null, "First name"), /*#__PURE__*/React.createElement("input", {
+        placeholder: t('passwordplaceholder')
+      })), /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", null, t('firstname')), /*#__PURE__*/React.createElement("input", {
         type: "text",
-        "class": "input-field",
+        className: "input-field",
         name: "email",
-        placeholder: "Enter First name"
-      })), /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, "Last name"), /*#__PURE__*/React.createElement("input", {
+        placeholder: t('firstnameplaceholder')
+      })), /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, t('lastname')), /*#__PURE__*/React.createElement("input", {
         type: "text",
-        "class": "input-field",
+        className: "input-field",
         name: "email",
-        placeholder: "Enter Last name"
+        placeholder: t('lastnameplaceholder')
       })), /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, " "), /*#__PURE__*/React.createElement("input", {
         type: "submit",
-        value: "Register"
+        value: t('register')
       }))));
     }
   }]);
@@ -44673,7 +44678,7 @@ var Registration = /*#__PURE__*/function (_React$Component) {
   return Registration;
 }(React.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Registration);
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_i18next__WEBPACK_IMPORTED_MODULE_1__["withTranslation"])()(Registration));
 
 /***/ }),
 
@@ -44686,6 +44691,8 @@ var Registration = /*#__PURE__*/function (_React$Component) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+var _translation, _translation2, _translation3;
+
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
@@ -44700,19 +44707,69 @@ var I18nUtils = /*#__PURE__*/_createClass(function I18nUtils() {
 
 _defineProperty(I18nUtils, "translationsData", {
   en: {
-    translation: {
-      greetings: "EN Translation"
-    }
+    translation: (_translation = {
+      greetings: "Hello",
+      home: "Home",
+      about: "About",
+      contact: "Contact",
+      blog: "Blog",
+      login: "Login",
+      register: "Register",
+      location: "Location",
+      username: "username",
+      password: "password",
+      usernameplaceholder: "Enter username",
+      passwordplaceholder: "Enter password",
+      email: "Email",
+      emailplaceholder: "Enter email",
+      confirmpassword: "Confirm password",
+      firstname: "First name",
+      firstnameplaceholder: "Enter first name",
+      lastname: "Last name",
+      lastnameplaceholder: "Enter last name"
+    }, _defineProperty(_translation, "register", "Register"), _defineProperty(_translation, "description", "Description"), _translation)
   },
-  fr: {
-    translation: {
-      greetings: "FR Translation"
-    }
+  de: {
+    translation: (_translation2 = {
+      greetings: "DEHello",
+      home: "DEHome",
+      about: "DEAbout",
+      contact: "DEContact",
+      blog: "DEBlog",
+      login: "DELogin",
+      register: "DERegister",
+      location: "DELocation",
+      usernameplaceholder: "DEEnter username",
+      passwordplaceholder: "DEEnter password",
+      email: "DEEmail",
+      emailplaceholder: "DEEnter email",
+      confirmpassword: "DEConfirm password",
+      firstname: "DEFirst name",
+      firstnameplaceholder: "DEEnter first name",
+      lastname: "DELast name",
+      lastnameplaceholder: "DEEnter last name"
+    }, _defineProperty(_translation2, "register", "DERegister"), _defineProperty(_translation2, "description", "DEDescription"), _translation2)
   },
   ro: {
-    translation: {
-      greetings: "RO Translation"
-    }
+    translation: (_translation3 = {
+      greetings: "ROHello",
+      home: "ROHome",
+      about: "ROAbout",
+      contact: "ROContact",
+      blog: "ROBlog",
+      login: "ROLogin",
+      register: "RORegister",
+      location: "ROLocation",
+      usernameplaceholder: "ROEnter username",
+      passwordplaceholder: "ROEnter password",
+      email: "ROEmail",
+      emailplaceholder: "ROEnter email",
+      confirmpassword: "ROConfirm password",
+      firstname: "ROFirst name",
+      firstnameplaceholder: "ROEnter first name",
+      lastname: "ROLast name",
+      lastnameplaceholder: "ROEnter last name"
+    }, _defineProperty(_translation3, "register", "RORegister"), _defineProperty(_translation3, "description", "RODescription"), _translation3)
   }
 });
 

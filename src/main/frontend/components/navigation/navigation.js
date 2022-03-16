@@ -22,38 +22,38 @@ class Navigation extends React.Component {
 					<ul className="nav justify-content-end">
 						<li className="nav-item">
 							<NavLink className="nav-link" to="/">
-								{t('greetings')}
+								{t('home')}
 								<span className="sr-only">(current)</span>
 							</NavLink>
 						</li>
 						<li className="nav-item">
 							<NavLink className="nav-link" to="/about">
-								About
+								{t('about')}
 							</NavLink>
 						</li>
 						<li className="nav-item">
 							<NavLink className="nav-link" to="/contact">
-								Contact
+								{t('contact')}
 							</NavLink>
 						</li>
 						<li className="nav-item">
 							<NavLink className="nav-link" to="/blog">
-								Blog
+								{t('blog')}
 							</NavLink>
 						</li>
 						<li className="nav-item">
 							<NavLink className="nav-link" to="/login">
-								Login
+								{t('login')}
 							</NavLink>
 						</li>
 						<li className="nav-item">
 							<NavLink className="nav-link" to="/registration">
-								Register
+								{t('register')}
 							</NavLink>
 						</li>
 						<li className="nav-item">
 							<NavLink className="nav-link" to="/location">
-								Location
+								{t('location')}
 							</NavLink>
 						</li>
 					</ul>
