@@ -4,6 +4,7 @@ import NotificationUtils from "../utils/notificationUtils.js";
 import FetchUtils from "../utils/fetchUtils.js"; 
 
 import { withTranslation } from 'react-i18next';
+import UrlConstants from "../utils/urlConstants.js";
 
 class Home extends React.Component {
 
@@ -21,7 +22,7 @@ class Home extends React.Component {
 	}
 
 	loadFromServer() {
-		FetchUtils.get("http://localhost:8080/movie-app/api/users")
+		FetchUtils.get(UrlConstants.API_GET_ALL_USERS_URL)
 			.then(res => res.json())
 			.then(
 				(data) => {

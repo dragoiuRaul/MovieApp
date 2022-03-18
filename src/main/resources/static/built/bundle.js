@@ -44187,6 +44187,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_notificationUtils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/notificationUtils.js */ "./src/main/frontend/components/utils/notificationUtils.js");
 /* harmony import */ var _utils_fetchUtils_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/fetchUtils.js */ "./src/main/frontend/components/utils/fetchUtils.js");
 /* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
+/* harmony import */ var _utils_urlConstants_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/urlConstants.js */ "./src/main/frontend/components/utils/urlConstants.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -44208,6 +44209,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
 
 
 
@@ -44243,7 +44245,7 @@ var Home = /*#__PURE__*/function (_React$Component) {
     value: function loadFromServer() {
       var _this2 = this;
 
-      _utils_fetchUtils_js__WEBPACK_IMPORTED_MODULE_3__["default"].get("http://localhost:8080/movie-app/api/users").then(function (res) {
+      _utils_fetchUtils_js__WEBPACK_IMPORTED_MODULE_3__["default"].get(_utils_urlConstants_js__WEBPACK_IMPORTED_MODULE_5__["default"].API_GET_ALL_USERS_URL).then(function (res) {
         return res.json();
       }).then(function (data) {
         _this2.setState({
@@ -44937,6 +44939,33 @@ var NotificationUtils = /*#__PURE__*/function () {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (NotificationUtils);
+
+/***/ }),
+
+/***/ "./src/main/frontend/components/utils/urlConstants.js":
+/*!************************************************************!*\
+  !*** ./src/main/frontend/components/utils/urlConstants.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var UrlConstants = /*#__PURE__*/_createClass(function UrlConstants() {
+  _classCallCheck(this, UrlConstants);
+});
+
+_defineProperty(UrlConstants, "API_GET_ALL_USERS_URL", "http://localhost:8080/movie-app/api/users");
+
+/* harmony default export */ __webpack_exports__["default"] = (UrlConstants);
 
 /***/ })
 
