@@ -3,6 +3,10 @@ import { NavLink } from "react-router-dom";
 import "./navigation.css";
 import { withTranslation } from 'react-i18next';
 
+const DateFormatter = new Intl.DateTimeFormat(window.navigator.userLanguage || window.navigator.language)
+const nowDate = new Date();
+const NumberFormater = new Intl.NumberFormat(window.navigator.userLanguage || window.navigator.language)
+const money = 10000;
 
 class Navigation extends React.Component {
 
@@ -29,6 +33,8 @@ class Navigation extends React.Component {
 						<li className="nav-item">
 							<NavLink className="nav-link" to="/about">
 								{t('about')}
+								{DateFormatter .format(nowDate)}
+								{NumberFormater.format(money)}
 							</NavLink>
 						</li>
 						<li className="nav-item">
